@@ -1,0 +1,258 @@
+/* ============================= */
+/* General Page Styling */
+/* ============================= */
+
+.speech-page {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  background: #f7f9fc;
+  padding-bottom: 80px;
+}
+
+/* ============================= */
+/* Banner Section */
+/* ============================= */
+
+.speech-banner {
+  width: 100%;
+  height: 240px;
+  background: linear-gradient(135deg, #005eff, #002b8a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.speech-banner h1 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ============================= */
+/* Intro Section */
+/* ============================= */
+
+.speech-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 8%;
+  margin-bottom: 90px;
+  flex-wrap: wrap;
+}
+
+.speech-img {
+  width: 420px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.speech-intro-text {
+  max-width: 520px;
+}
+
+.speech-intro-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.speech-intro-text p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* ============================= */
+/* Main Card Section */
+/* ============================= */
+
+.speech-card {
+  background: white;
+  margin: 0 8%;
+  padding: 50px;
+  border-radius: 14px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  margin-bottom: 80px;
+}
+
+.speech-card h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.speech-card h4 {
+  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  color: #003fbe;
+}
+
+.speech-card-content {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.speech-card-img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.speech-card p {
+  flex: 1;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* ============================= */
+/* List Styling */
+/* ============================= */
+
+.hover-list {
+  padding-left: 20px;
+}
+
+.hover-list li {
+  font-size: 17px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover enhanced */
+.hover-list li:hover {
+  color: #005eff;
+  transform: translateX(10px);
+  font-weight: 600;
+}
+
+/* ============================= */
+/* Contact Section */
+/* ============================= */
+
+.speech-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-box {
+  background: white;
+  padding: 40px;
+  width: 380px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+  transition: 0.4s ease;
+}
+
+.contact-box h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #003fbe;
+}
+
+.contact-box h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.phone {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.contact-box p {
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #0066ff, #003bb8);
+  padding: 12px 30px;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 18px;
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: scale(1.08);
+  background: linear-gradient(135deg, #003bb8, #00237a);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.contact-img {
+  width: 380px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ============================= */
+/* Responsiveness */
+/* ============================= */
+
+@media (max-width: 992px) {
+  .speech-banner h1 {
+    font-size: 36px;
+  }
+
+  .speech-intro,
+  .speech-card-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .speech-img,
+  .speech-card-img,
+  .contact-img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+  }
+
+  .contact-box {
+    width: 100%;
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 576px) {
+  .speech-banner {
+    height: 180px;
+  }
+
+  .speech-banner h1 {
+    font-size: 28px;
+  }
+
+  .speech-card {
+    padding: 30px;
+  }
+
+  .contact-box {
+    padding: 30px;
+  }
+}

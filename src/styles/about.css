@@ -1,0 +1,377 @@
+/* ============================
+   SCROLL REVEAL ANIMATIONS
+============================ */
+.fade-in,
+.fade-up,
+.fade-down,
+.slide-left,
+.slide-right,
+.slide-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.9s ease-out;
+}
+
+.fade-down { transform: translateY(-20px); }
+.slide-left { transform: translateX(-50px); }
+.slide-right { transform: translateX(50px); }
+.slide-up { transform: translateY(60px); }
+
+/* When visible */
+.show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* ============================
+   BASIC PAGE STYLE
+============================ */
+.about-page {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER STRIP */
+.header-strip {
+  background: #0066cc;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.header-strip h2 {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+/* ============================
+   SECTION ROWS (IMAGE + TEXT)
+============================ */
+.section-row {
+  display: flex;
+  align-items: center;
+  padding: 50px 5%;
+  gap: 40px;
+}
+
+.section-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+/* Zoom effect */
+.zoom-hover:hover img {
+  transform: scale(1.06);
+}
+
+.text-box h3 {
+  font-size: 30px;
+  margin-bottom: 12px;
+  color: #003366;
+}
+
+.text-box ul {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+/* ============================
+   FULL STRIP SECTION
+============================ */
+.full-strip {
+  background: #f5f9ff;
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.full-strip h3 {
+  font-size: 32px;
+  color: #003366;
+}
+
+.list-box {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 25px;
+}
+
+.list-box ul {
+  list-style: square;
+  text-align: left;
+  line-height: 1.8;
+}
+
+/* ============================
+   TEAM CARDS
+============================ */
+.team-intro {
+  padding: 50px 5%;
+  text-align: center;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ============================
+   VISION & MISSION
+============================ */
+.vision-mission {
+  padding: 60px 5%;
+  background: #eef4ff;
+  text-align: center;
+}
+
+.vm-box {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.vm-card {
+  width: 320px;
+  padding: 25px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease;
+}
+
+.vm-card:hover {
+  transform: translateY(-10px);
+}
+
+.vm-card h4 {
+  font-size: 24px;
+  color: #003366;
+}
+
+/* ============================
+   WHY CHOOSE US
+============================ */
+.why-choose {
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.why-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.4s, box-shadow 0.3s;
+}
+
+.why-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.why-card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+/* ============================
+   PATIENT JOURNEY
+============================ */
+.journey-section {
+  padding: 60px 5%;
+  text-align: center;
+  background: #f8fcff;
+}
+
+.journey-steps {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.step {
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.step span {
+  display: inline-block;
+  background: #0066cc;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+/* ============================
+   BRANDS STRIP
+============================ */
+.brands-strip {
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.brand-logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.brand-logos img {
+  width: 120px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.brand-logos img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* ============================
+   TESTIMONIALS
+============================ */
+.testimonials {
+  padding: 60px 5%;
+  background: #f7faff;
+  text-align: center;
+}
+
+.testimony-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.testimony-card {
+  width: 300px;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease;
+}
+
+.testimony-card:hover {
+  transform: translateY(-10px);
+}
+
+/* ============================
+   CONTACT STRIP
+============================ */
+.contact-strip {
+  padding: 60px 5%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.contact-text h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.phone {
+  font-size: 22px;
+  margin: 5px 0;
+  color: #0066cc;
+}
+
+.contact-btn {
+  padding: 12px 25px;
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: #004c99;
+  transform: scale(1.05);
+}
+
+.contact-image img {
+  width: 350px;
+  border-radius: 10px;
+  transition: transform 0.4s;
+}
+
+.contact-image:hover img {
+  transform: scale(1.06);
+}
+
+/* ============================
+   RESPONSIVE
+============================ */
+@media (max-width: 850px) {
+  .section-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-strip {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .list-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-box img {
+    max-width: 500px;
+  }
+}

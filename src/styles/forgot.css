@@ -1,0 +1,78 @@
+.forgot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.forgot-box {
+  width: 420px;
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.forgot-box h2 {
+  margin-bottom: 10px;
+  color: #ff6200;
+  font-size: 28px;
+}
+
+.forgot-box p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-weight: bold;
+  color: #444;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.reset-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ff6200;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reset-btn:hover {
+  background: #dd4f00;
+}
+
+.back-login {
+  margin-top: 15px;
+}
+
+.back-login a {
+  text-decoration: none;
+  color: #ff6200;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

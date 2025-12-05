@@ -1,0 +1,251 @@
+/* =================== GLOBAL SECTION STYLES =================== */
+
+.section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.section-light {
+  background: #f5faff;
+}
+
+.section-white {
+  background: #ffffff;
+}
+
+.section-grey {
+  background: #f2f2f2;
+}
+
+.section-cream {
+  background: #fff7e6;
+}
+
+
+/* =================== ANIMATIONS =================== */
+
+.fade-in,
+.slide-left,
+.slide-right {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-left {
+  transform: translateX(-40px);
+}
+
+.slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-right {
+  transform: translateX(40px);
+}
+
+
+
+/* =================== HERO SECTION =================== */
+
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.hero-slider {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.hero-slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hero-text {
+  text-align: center;
+  margin-top: 25px;
+  padding: 0 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 10px 0 20px;
+}
+
+
+
+
+
+/* =================== WELCOME SECTION =================== */
+
+.welcome {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.welcome h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+}
+
+
+
+/* =================== SERVICES =================== */
+
+.services h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+/* =================== BRANDS =================== */
+
+.brand-logos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.brand-logos img {
+  filter: grayscale(50%);
+  transition: 0.3s;
+}
+
+.brand-logos img:hover {
+  filter: grayscale(0%);
+}
+
+
+
+/* =================== TESTIMONIALS =================== */
+
+.testimonial-card {
+  background: #ffffff;
+  padding: 30px;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-card p {
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+
+
+/* =================== CONTACT CTA =================== */
+
+.contact-cta {
+  max-width: 700px;
+  margin: auto;
+}
+
+.contact-cta p {
+  margin-bottom: 20px;
+}
+
+
+
+/* =================== RESPONSIVE =================== */
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.btn-primary {
+  background: #fc0202;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #111010;
+  color: #f2f2f2;
+}
+
+.footer-link {
+  margin-top: 10px;
+}
