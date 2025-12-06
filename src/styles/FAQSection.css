@@ -8,20 +8,23 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Title */
 .faq-section h2 {
   margin: 25px 0 15px;
-  color: #013220;
-  border-left: 4px solid #013220;
+  color: #ff7a00; /* Orange */
+  border-left: 4px solid #ff7a00;
   padding-left: 10px;
 }
 
+/* Wrapper */
 .faq-item {
   margin-bottom: 12px;
 }
 
+/* Question Button */
 .faq-question {
   width: 100%;
-  background: #e8e8e8;
+  background: #ffe4c2; /* Light orange background */
   border: none;
   padding: 15px;
   font-size: 16px;
@@ -31,15 +34,17 @@
   transition: 0.3s ease;
 }
 
+/* Active state */
 .faq-question.active {
-  background: #013220;
+  background: #ff7a00; /* Orange */
   color: white;
 }
 
+/* Answer Box */
 .faq-answer {
   overflow: hidden;
-  background: #fafafa;
-  border-left: 3px solid #013220;
+  background: #fff7ef; /* Very light orange */
+  border-left: 3px solid #ff7a00;
   padding: 0 15px;
   border-radius: 0 0 5px 5px;
   transition: max-height 0.3s ease;
@@ -47,4 +52,21 @@
 
 .faq-answer p {
   margin: 15px 0;
+}
+
+/* Optional: If your FAQ has a button */
+.faq-btn {
+  margin-top: 15px;
+  padding: 12px 18px;
+  background: #d50000; /* Red button */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.faq-btn:hover {
+  background: #a30000; /* Darker red */
 }

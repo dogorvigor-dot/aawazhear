@@ -3,29 +3,33 @@
   justify-content: center;
   align-items: center;
   padding: 50px 20px;
+  background: #fff6e9; /* soft orange background */
 }
 
+/* ---------- MAIN CARD ---------- */
 .forgot-box {
   width: 420px;
   background: white;
   padding: 35px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.15);
   text-align: center;
   animation: fadeIn 0.8s ease-in-out;
 }
 
 .forgot-box h2 {
   margin-bottom: 10px;
-  color: #ff6200;
+  color: #ff7b00; /* premium orange */
   font-size: 28px;
+  font-weight: 700;
 }
 
 .forgot-box p {
   margin-bottom: 20px;
-  color: #555;
+  color: #666;
 }
 
+/* ---------- INPUT ---------- */
 .input-group {
   text-align: left;
   margin-bottom: 15px;
@@ -33,24 +37,31 @@
 
 .input-group label {
   font-weight: bold;
-  color: #444;
+  color: #ff7b00; /* orange label */
 }
 
 .input-group input {
   width: 100%;
   padding: 12px;
-  border: 1px solid #bbb;
+  border: 1.5px solid #ffd2a4; /* soft orange border */
   border-radius: 8px;
   margin-top: 5px;
   font-size: 16px;
+  transition: 0.3s;
 }
 
+.input-group input:focus {
+  border-color: #ff7b00;
+  box-shadow: 0 0 6px rgba(255, 123, 0, 0.4);
+}
+
+/* ---------- RED BUTTON ---------- */
 .reset-btn {
   width: 100%;
   padding: 12px;
-  background: #ff6200;
+  background: #e60023; /* 🔥 RED BUTTON */
   color: white;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
   border: none;
   border-radius: 8px;
@@ -59,19 +70,25 @@
 }
 
 .reset-btn:hover {
-  background: #dd4f00;
+  background: #b8001c; /* darker red */
 }
 
+/* ---------- BACK TO LOGIN ---------- */
 .back-login {
   margin-top: 15px;
 }
 
 .back-login a {
   text-decoration: none;
-  color: #ff6200;
+  color: #ff7b00; /* orange text link */
   font-weight: bold;
 }
 
+.back-login a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- ANIMATION ---------- */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }

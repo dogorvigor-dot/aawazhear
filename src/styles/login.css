@@ -4,13 +4,13 @@
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  background: #f5f7fa;
+  background: #fff4e5; /* light orange theme */
 }
 
 /* LEFT IMAGE */
 .login-image {
   flex: 1;
-  background: #e3f3ff;
+  background: #ffe1c2; /* soft warm orange */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,15 +34,16 @@
 
 .login-form h2 {
   font-size: 32px;
-  color: #e7880b;
+  color: #f8a646; /* bright orange */
   margin-bottom: 5px;
 }
 
 .login-form p {
-  color: #555;
+  color: #444;
   margin-bottom: 30px;
 }
 
+/* INPUT GROUP */
 .input-group {
   margin-bottom: 20px;
 }
@@ -57,22 +58,22 @@
 .input-group input {
   width: 100%;
   padding: 12px 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffb96b; /* orange border */
   border-radius: 8px;
   transition: 0.3s;
 }
 
 .input-group input:focus {
-  border-color: #eba103;
-  box-shadow: 0 0 6px rgba(238, 136, 2, 0.4);
+  border-color: #f8a646;
+  box-shadow: 0 0 6px rgba(248, 166, 70, 0.4);
   outline: none;
 }
 
-/* LOGIN BUTTON */
+/* LOGIN BUTTON — RED */
 .login-btn {
   width: 100%;
   padding: 14px;
-  background: #f07109;
+  background: #e60023; /* red button */
   border: none;
   border-radius: 8px;
   color: #fff;
@@ -83,10 +84,10 @@
 }
 
 .login-btn:hover {
-  background: #70770b;
+  background: #b8001b; /* dark red hover */
 }
 
-/* EXTRA LINKS */
+/* EXTRA OPTIONS */
 .extra-options {
   margin-top: 15px;
   text-align: center;
@@ -94,7 +95,7 @@
 }
 
 .extra-options a {
-  color: #e7a20e;
+  color: #f8a646; /* orange link */
   text-decoration: none;
   font-size: 14px;
 }
@@ -106,7 +107,7 @@
 /* ANIMATION */
 @keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: 0.3; /* small fix so text won't disappear */
     transform: translateY(20px);
   }
   to {

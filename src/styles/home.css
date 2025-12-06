@@ -6,7 +6,7 @@
 }
 
 .section-light {
-  background: #f5faff;
+  background: #fff3e0; 
 }
 
 .section-white {
@@ -14,20 +14,19 @@
 }
 
 .section-grey {
-  background: #f2f2f2;
+  background: #f5f5f5;
 }
 
 .section-cream {
-  background: #fff7e6;
+  background: #ffe0bf;
 }
 
 
 /* =================== ANIMATIONS =================== */
-
 .fade-in,
 .slide-left,
 .slide-right {
-  opacity: 0;
+  opacity: 0;          /* FIXED: start fully hidden */
   transform: translateY(20px);
   transition: all 0.8s ease-out;
 }
@@ -37,16 +36,11 @@
   transform: translateY(0);
 }
 
-.slide-left.visible {
-  opacity: 1;
-  transform: translateX(0);
-}
-
 .slide-left {
   transform: translateX(-40px);
 }
 
-.slide-right.visible {
+.slide-left.visible {
   opacity: 1;
   transform: translateX(0);
 }
@@ -55,6 +49,10 @@
   transform: translateX(40px);
 }
 
+.slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 
 /* =================== HERO SECTION =================== */
@@ -70,13 +68,14 @@
 
 .hero-slider {
   width: 100%;
-  max-width: 1100px;
+  max-width: 950px;
 }
 
 .hero-slider img {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 .hero-text {
@@ -88,7 +87,7 @@
 .hero-text h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #222;
+  color: #ff7b00;
 }
 
 .hero-text p {
@@ -96,9 +95,6 @@
   color: #555;
   margin: 10px 0 20px;
 }
-
-
-
 
 
 /* =================== WELCOME SECTION =================== */
@@ -111,6 +107,7 @@
 
 .welcome h2 {
   font-size: 2rem;
+  color: #ff7b00;
   margin-bottom: 10px;
 }
 
@@ -121,12 +118,12 @@
 }
 
 
-
 /* =================== SERVICES =================== */
 
 .services h2 {
   margin-bottom: 30px;
   font-size: 2rem;
+  color: #ff7b00;
 }
 
 .service-grid {
@@ -142,7 +139,8 @@
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
+  transition: 0.3s;
+  border-top: 4px solid #ff7b00;
 }
 
 .service-card:hover {
@@ -153,7 +151,6 @@
   width: 100%;
   border-radius: 10px;
 }
-
 
 
 /* =================== BRANDS =================== */
@@ -176,7 +173,6 @@
 }
 
 
-
 /* =================== TESTIMONIALS =================== */
 
 .testimonial-card {
@@ -185,6 +181,7 @@
   max-width: 700px;
   margin: auto;
   border-radius: 10px;
+  border-left: 4px solid #ff7b00;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
 }
 
@@ -193,7 +190,6 @@
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
-
 
 
 /* =================== CONTACT CTA =================== */
@@ -208,10 +204,38 @@
 }
 
 
+/* =================== BUTTON (RED THEME) =================== */
+
+.btn-primary {
+  background: #e60023;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #b8001c;
+  color: #fff4e0;
+}
+
+.footer-link {
+  margin-top: 10px;
+}
+
 
 /* =================== RESPONSIVE =================== */
 
 @media (max-width: 768px) {
+
+  .hero-slider img {
+    height: 230px;
+  }
+
   .hero-text h1 {
     font-size: 1.8rem;
   }
@@ -228,24 +252,4 @@
   .service-grid {
     grid-template-columns: 1fr;
   }
-}
-.btn-primary {
-  background: #fc0202;
-  color: white;
-  padding: 12px 28px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 600;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.btn-primary:hover {
-  background: #111010;
-  color: #f2f2f2;
-}
-
-.footer-link {
-  margin-top: 10px;
 }

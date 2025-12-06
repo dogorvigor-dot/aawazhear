@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import "../styles/about.css";
 
 export default function About() {
-  // SCROLL REVEAL ANIMATIONS
+
+  // SCROLL REVEAL ANIMATION
   useEffect(() => {
     const revealElements = document.querySelectorAll(
       ".fade-in, .fade-up, .fade-down, .slide-left, .slide-right, .slide-up"
@@ -19,227 +20,150 @@ export default function About() {
 
     window.addEventListener("scroll", revealOnScroll);
     revealOnScroll();
+
     return () => window.removeEventListener("scroll", revealOnScroll);
   }, []);
 
   return (
     <div className="about-page">
 
-      {/* HEADER STRIP */}
-      <section className="header-strip fade-down">
-        <h2>About Us</h2>
+      {/* HERO BANNER */}
+      <section className="hero-banner fade-down">
+        <div className="hero-text">
+          <h1>Aawaz Hearing & Speech Care Center</h1>
+          <p>Your trusted partner for hearing, speech & communication wellness.</p>
+        </div>
       </section>
 
-      {/* SECTION 1 */}
+      {/* WHO WE ARE */}
       <section className="section-row slide-left">
         <div className="image-box zoom-hover">
-          <img src="/about1.jpg" alt="clinic" />
+          <img
+            src="https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg"
+            alt="clinic"
+          />
         </div>
 
         <div className="text-box">
-          <h3>Meet our clinic</h3>
+          <h2>Who We Are</h2>
           <p>
-            Aawaz Hearing and Speech Care Center provides exceptional audiology
-            and speech therapy services with accurate diagnosis and modern
-            technology.
+            We are a specialized hearing and speech diagnostic center committed
+            to improving lives through advanced evaluation, therapy, and rehabilitation.
+          </p>
+          <p>
+            Our mission is to deliver world-class care using modern technology
+            and compassionate support for all ages.
           </p>
         </div>
       </section>
 
-      {/* SECTION 2 */}
-      <section className="section-row reverse slide-right">
-        <div className="text-box">
-          <h3>Hearing tests available at our center</h3>
+      {/* OUR SERVICES OVERVIEW */}
+      <section className="wide-section fade-in">
+        <h2>What We Provide</h2>
+        <p className="center-text">
+          A complete range of hearing and speech solutions—from diagnosis to rehabilitation.
+        </p>
 
-          <ul>
-            <li>Pure Tone Audiometry (PTA/Audiogram)</li>
-            <li>Immittance Testing (Tympanometry, Acoustic Reflexes)</li>
-            <li>Behavioral Observation Audiometry (BOA)</li>
-            <li>Otoacoustic Emission (OAE)</li>
-            <li>Auditory Brainstem Response (ABR/BERA)</li>
-          </ul>
-        </div>
+        <div className="service-grid">
+          <div className="service-card fade-up">
+            <img src="https://images.pexels.com/photos/8460031/pexels-photo-8460031.jpeg" alt="" />
+            <h4>Hearing Assessments</h4>
+            <p>PTA, Tympanometry, OAE, ABR & more advanced tests.</p>
+          </div>
 
-        <div className="image-box zoom-hover">
-          <img src="/about2.jpg" alt="doctor" />
-        </div>
-      </section>
+          <div className="service-card fade-up">
+            <img src="https://images.pexels.com/photos/7089020/pexels-photo-7089020.jpeg" alt="" />
+            <h4>Speech Therapy</h4>
+            <p>For children & adults with speech, fluency & language disorders.</p>
+          </div>
 
-      {/* SECTION 3 */}
-      <section className="full-strip fade-in">
-        <h3>Speech and Language Therapy Includes</h3>
-
-        <div className="list-box">
-          <ul>
-            <li>Sound Imaging Channels</li>
-            <li>Bandwidth Extended to 10kHz</li>
-            <li>Wireless Streaming & Audio Processing</li>
-            <li>Music Optimization</li>
-            <li>Noise Reduction Technology</li>
-            <li>Feedback Management</li>
-          </ul>
-
-          <ul>
-            <li>Directional Processing</li>
-            <li>Dynamic Range Optimization</li>
-            <li>Frequency Lowering</li>
-            <li>Tinnitus Technology</li>
-            <li>Wireless Accessories</li>
-          </ul>
+          <div className="service-card fade-up">
+            <img src="https://images.pexels.com/photos/8460128/pexels-photo-8460128.jpeg" alt="" />
+            <h4>Hearing Aids</h4>
+            <p>Digital, rechargeable & Bluetooth-enabled solutions.</p>
+          </div>
         </div>
       </section>
 
-      {/* TEAM SECTION */}
-      <section className="team-intro fade-in">
-        <h3>About Our Team</h3>
-        <p>
-          Our certified audiologists and speech therapists provide high-quality
-          diagnosis, therapy, and rehabilitation for all ages.
+      {/* TEAM */}
+      <section className="team-section fade-in">
+        <h2>Meet Our Specialists</h2>
+        <p className="center-text">
+          Experienced & certified professionals dedicated to better hearing and communication.
         </p>
 
         <div className="team-cards">
-          <div className="team-card fade-up">
-            <img src="/team1.jpg" alt="team" />
-            <h4>Certified Audiologists</h4>
-            <p>Experts in hearing assessment & device fitting.</p>
+          <div className="team-card slide-up">
+            <img src="https://images.pexels.com/photos/5214958/pexels-photo-5214958.jpeg" alt="" />
+            <h4>Audiologists</h4>
+            <p>Experts in hearing evaluation & rehabilitation.</p>
           </div>
 
-          <div className="team-card fade-up">
-            <img src="/team2.jpg" alt="team" />
+          <div className="team-card slide-up">
+            <img src="https://images.pexels.com/photos/6129681/pexels-photo-6129681.jpeg" alt="" />
             <h4>Speech Therapists</h4>
-            <p>Improving communication through targeted therapy.</p>
+            <p>Helping children & adults communicate effectively.</p>
           </div>
 
-          <div className="team-card fade-up">
-            <img src="/team3.jpg" alt="team" />
-            <h4>Care Specialists</h4>
-            <p>Dedicated to patient support & guidance.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* VISION & MISSION */}
-      <section className="vision-mission fade-in">
-        <h3>Our Vision & Mission</h3>
-
-        <div className="vm-box">
-          <div className="vm-card slide-left">
-            <h4>Our Vision</h4>
-            <p>
-              To become a trusted hearing and speech care provider by delivering
-              world-class services, advanced technology, and compassionate care.
-            </p>
-          </div>
-
-          <div className="vm-card slide-right">
-            <h4>Our Mission</h4>
-            <p>
-              To improve lives by offering accurate diagnosis, personalized 
-              therapy, and high-quality rehabilitation for all age groups.
-            </p>
+          <div className="team-card slide-up">
+            <img src="https://images.pexels.com/photos/8460155/pexels-photo-8460155.jpeg" alt="" />
+            <h4>Care Professionals</h4>
+            <p>Ensuring a friendly, supportive & comfortable experience.</p>
           </div>
         </div>
       </section>
 
-      {/* WHY CHOOSE US */}
-      <section className="why-choose fade-up">
-        <h3>Why Choose Aawaz Hearing & Speech Care?</h3>
+      {/* OUR PROCESS */}
+      <section className="process-section fade-in">
+        <h2>Our Care Journey</h2>
 
-        <div className="why-grid">
-          <div className="why-card fade-up">
-            <img src="/icon1.png" alt="icon" />
-            <h4>Experienced Specialists</h4>
-            <p>Qualified audiologists & speech therapists with years of experience.</p>
+        <div className="process-steps">
+          <div className="step slide-left">
+            <span>01</span>
+            <h4>Book Consultation</h4>
+            <p>Schedule your appointment at your convenience.</p>
           </div>
 
-          <div className="why-card fade-up">
-            <img src="/icon2.png" alt="icon" />
-            <h4>Modern Equipment</h4>
-            <p>Advanced diagnostic tools for accurate hearing assessment.</p>
+          <div className="step slide-up">
+            <span>02</span>
+            <h4>Assessment & Diagnosis</h4>
+            <p>Accurate tests using modern equipment.</p>
           </div>
 
-          <div className="why-card fade-up">
-            <img src="/icon3.png" alt="icon" />
-            <h4>Personalized Care</h4>
-            <p>Customized therapy plans tailored to each patient’s needs.</p>
-          </div>
-
-          <div className="why-card fade-up">
-            <img src="/icon4.png" alt="icon" />
-            <h4>Friendly Environment</h4>
-            <p>Comfortable clinic setting ideal for children & adults.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* PATIENT JOURNEY */}
-      <section className="journey-section slide-up">
-        <h3>How We Help You</h3>
-
-        <div className="journey-steps">
-          <div className="step fade-up">
-            <span>1</span>
-            <h4>Book an Appointment</h4>
-            <p>Call or visit the clinic to schedule your evaluation.</p>
-          </div>
-
-          <div className="step fade-up">
-            <span>2</span>
-            <h4>Get Assessed</h4>
-            <p>We perform detailed hearing & speech evaluations.</p>
-          </div>
-
-          <div className="step fade-up">
-            <span>3</span>
-            <h4>Start Treatment</h4>
-            <p>Begin your personalized therapy & rehabilitation plan.</p>
+          <div className="step slide-right">
+            <span>03</span>
+            <h4>Begin Treatment</h4>
+            <p>Personalized therapy & rehabilitation plans.</p>
           </div>
         </div>
       </section>
 
       {/* BRANDS */}
-      <section className="brands-strip fade-in">
-        <h3>We Work With Trusted Hearing Aid Brands</h3>
+      <section className="brands-section fade-in">
+        <h2>Trusted Hearing Aid Partners</h2>
 
         <div className="brand-logos slide-left">
-          <img src="/brand1.png" alt="brand" />
-          <img src="/brand2.png" alt="brand" />
-          <img src="/brand3.png" alt="brand" />
-          <img src="/brand4.png" alt="brand" />
-        </div>
-      </section>
-
-      {/* TESTIMONIALS */}
-      <section className="testimonials fade-up">
-        <h3>What Our Patients Say</h3>
-
-        <div className="testimony-row">
-          <div className="testimony-card slide-left">
-            <p>"Very friendly staff and accurate diagnosis. Highly recommended!"</p>
-            <h4>- Sita K.</h4>
-          </div>
-
-          <div className="testimony-card slide-right">
-            <p>"My child's speech improved a lot after therapy. Thank you!"</p>
-            <h4>- Ramesh P.</h4>
-          </div>
+          <img src="https://via.placeholder.com/150x60?text=Widex" alt="" />
+          <img src="https://via.placeholder.com/150x60?text=Signia" alt="" />
+          <img src="https://via.placeholder.com/150x60?text=Phonak" alt="" />
+          <img src="https://via.placeholder.com/150x60?text=Resound" alt="" />
         </div>
       </section>
 
       {/* CONTACT STRIP */}
       <section className="contact-strip slide-up">
         <div className="contact-text">
-          <h3>Need Help?<br />Call us</h3>
+          <h2>Need Assistance?</h2>
           <p className="phone">981-3573953</p>
-          <p>
-            Have questions? Need consultation?<br />
-            Our experts are ready to assist you.
-          </p>
-          <button className="contact-btn">CONTACT US</button>
+          <p>Our experts are ready to guide you on hearing & speech solutions.</p>
+          <button className="contact-btn">Contact Us</button>
         </div>
 
         <div className="contact-image zoom-hover">
-          <img src="/hearing-aid.jpg" alt="hearing aid" />
+          <img
+            src="https://images.pexels.com/photos/7088523/pexels-photo-7088523.jpeg"
+            alt="hearing aid"
+          />
         </div>
       </section>
 
